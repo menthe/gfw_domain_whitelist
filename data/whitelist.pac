@@ -20,10 +20,8 @@ var ip_proxy = proxy[0];
  */
 
 var white_domains = __DOMAINS__;
-white_domains.push(
-    '"npls.io":1,',
-    '"nextplus-inc.com":1,'
-);
+white_domains.push('"npls.io":1,');
+white_domains.push('"nextplus-inc.com":1,');
 
 var subnetIpRangeList = [
     0, 1,

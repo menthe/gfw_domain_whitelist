@@ -41671,7 +41671,6 @@ var white_domains = {
 "zavakid.com":1,
 "zazhi.com":1,
 "zazhipu.com":1,
-"zb.com":1,
 "zb1.org":1,
 "zb117.com":1,
 "zb580.tv":1,
@@ -43246,7 +43245,7 @@ function FindProxyForURL (url, host) {
     if (isPlainHostName(host) === true) {
         return direct;
     }
-    
+
     if (check_ipv4(host) === true) {
         return getProxyFromDirectIP(host);
     }
@@ -43254,7 +43253,7 @@ function FindProxyForURL (url, host) {
     if (isInDomains(white_domains, host) === true) {
         return direct;
     }
-    
+
     if (okToLoadBalance) {
         return loadBalance();
     }
